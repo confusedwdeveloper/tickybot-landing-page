@@ -98,7 +98,7 @@ img {
   margin-bottom: 2rem;
   font-weight: 300;
 }
-.bot-description a {
+.anchor-button {
   background-color: #fff;
   text-decoration: none;
   border-radius: 4px;
@@ -115,9 +115,9 @@ img {
   transition: transform 0.3s ease-in-out;
 
 }
-.bot-description a:hover {
+.anchor-button:hover {
   transform: scale(0.98);
 }
-.bot-description a span {
+.anchor-button span {
   color: rgba(0,0,0,0.75);
 }
