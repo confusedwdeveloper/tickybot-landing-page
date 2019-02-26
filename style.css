@@ -4,6 +4,7 @@ body {
   font-family: 'Signika', sans-serif;
   font-weight: 300;
   line-height: 1.5;
+  color: rgba(0,0,0,0.75);
 }
 nav, ul {
   padding: 0;
@@ -29,6 +30,7 @@ header {
 .links a {
   text-decoration: none;
   color: #ffd05a;
+  opacity: 0.9;
   background-color: transparent;
   transition: color .3s ease-in-out;
 }
@@ -121,3 +123,58 @@ img {
 .anchor-button span {
   color: rgba(0,0,0,0.75);
 }
+/* ..................... what is tickybot section............... */
+#what-is-tickybot {
+  height: 50vh;
+  padding: 1rem;
+  line-height: 1.5;
+  /* position: relative; */
+}
+#what-is-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+#what-is-tickybot h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 1.25;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  color: rgba(0,0,0,0.75);
+
+}
+#what-is-tickybot h3:after {
+  background-color: #55c0ec;
+  content: "";
+  height: 3px;
+  width: 160px;
+  position: absolute;
+  left: 43%;
+  bottom: 0%;
+
+}
+/* .....grid system for this section.... */
+.what-is-container {
+  font-size: 1.25rem;
+  margin: 0 auto;
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(1fr,600px));
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2.5rem;
+  grid-row-gap: 1rem;
+
+}
+#child-one {
+  grid-area: 1/1/2/2;
+}
+#child-two {
+  grid-area: 1/2/2/3;
+}
+#child-three {
+  grid-area: 2/1/3/3;
+  margin-top: 0;
+}
+/* With this this section is done. But lot of work for media to maintain that absolute position nightmare */
