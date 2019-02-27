@@ -125,7 +125,7 @@ img {
 }
 /* ..................... what is tickybot section............... */
 #what-is-tickybot {
-  height: 50vh;
+  min-height: 50vh;
   padding: 1rem;
   line-height: 1.5;
   /* position: relative; */
@@ -159,12 +159,13 @@ img {
 .what-is-container {
   font-size: 1.25rem;
   margin: 0 auto;
-  width: 85%;
+  /* width: 85%; */
   display: grid;
   grid-template-columns: repeat(2, minmax(1fr,600px));
   grid-template-rows: 1fr 1fr;
   grid-gap: 2.5rem;
   grid-row-gap: 1rem;
+  max-width: 1200px;
 
 }
 #child-one {
@@ -181,6 +182,47 @@ img {
 /* ...................................Card section........................................ */
 #features {
   background-color: #90ddaa;
-  height: 50vh;
+  min-height: 50vh;
   padding: 1rem;
+}
+.how-it-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1rem;
+  max-width: 1200px;
+
+}
+.how-it-image {
+  width: 224px;
+  margin: 4rem auto;
+}
+
+
+.cards {
+  background-color: #40596b;
+  border-radius: 4px;
+  padding: 0;
+  margin: 1rem;
+  margin-bottom: 3rem;
+  min-width: 300px;
+  flex: 1 0 calc(33.33333% -2rem);
+
+
+}
+.cards-description {
+  background-color: #fafafa;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.25rem;
+}
+code {
+  border-radius: 2px;
+  color: crimson;
+  font-family: monospace;
+  font-size: 1rem
+  padding: 0.2rem;
+
 }
