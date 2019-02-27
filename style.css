@@ -130,12 +130,12 @@ img {
   line-height: 1.5;
   /* position: relative; */
 }
-#what-is-div {
+.what-is-div {
   padding: 0;
   margin: 0;
   position: relative;
 }
-#what-is-tickybot h3 {
+.subheading {
   text-align: center;
   font-size: 2.5rem;
   line-height: 1.25;
@@ -145,7 +145,7 @@ img {
   color: rgba(0,0,0,0.75);
 
 }
-#what-is-tickybot h3:after {
+.subheading:after {
   background-color: #55c0ec;
   content: "";
   height: 3px;
@@ -178,3 +178,9 @@ img {
   margin-top: 0;
 }
 /* With this this section is done. But lot of work for media to maintain that absolute position nightmare */
+/* ...................................Card section........................................ */
+#features {
+  background-color: #90ddaa;
+  height: 50vh;
+  padding: 1rem;
+}
