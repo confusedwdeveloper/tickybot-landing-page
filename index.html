@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
   <title>TickyBot - Your Support Ticket Slack Bot</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -27,7 +28,7 @@
     <!-- Welcome section -->
     <section id="home">
       <!-- 2 divs for 2 sections. will add section as grid container -->
-      <div class="bot-description">
+      <div class="bot-description scroll-view">
         <h1 class="heading"><strong>Ticky</strong>Bot</h1>
         <p>Let your team manage their support tickets 100% inside Slack</p>
         <a class="anchor-button" href="https://slack.com/oauth/authorize?client_id=39189849459.249480535796&amp;scope=commands,bot,users%2Eprofile%3Aread,im%3Aread,chat%3Awrite%3Abot,team%3Aread">
@@ -35,14 +36,14 @@
           <span>Add to <strong>Slack</strong></span>
         </a>
       </div>
-      <div class="bot-robot">
+      <div class="bot-robot scroll-view">
         <img id="mr-robot" src="./images/tickybot.svg" alt="">
       </div>
 
     </section>
     <!-- section about 'what is tickybot' -->
     <article id="what-is-tickybot">
-      <div class="what-is-div">
+      <div class="what-is-div scroll-view">
         <h3 class="subheading">What is <strong>Ticky</strong>Bot</h3>
       </div>
       <div class="what-is-container">
@@ -69,19 +70,19 @@
         </h3>
       </div>
       <div class="how-it-container">
-        <div class="cards">
+        <div class="cards scroll-view">
           <img class="how-it-image" src="./images/workplace.svg" alt="">
           <div class="cards-description">
             <p>You can add <strong>Ticky</strong>Bot to your Slack workplace by scrolling down or <a href="#last-button">clicking here</a></p>
           </div>
         </div>
-        <div class="cards">
+        <div class="cards scroll-view">
           <img class="how-it-image" src="./images/bubble.svg" alt="">
           <div class="cards-description">
             <p>Your users can open a ticket by typing <code>/ticket</code> and their message into the chat field</p>
           </div>
         </div>
-        <div class="cards">
+        <div class="cards scroll-view">
           <img class="how-it-image" src="./images/tasks.svg" alt="">
           <div class="cards-description">
             <p>Once you or another admin solved their problems you can type <code>/ticket close #id</code> to close the ticket</p>
@@ -121,9 +122,8 @@
   <!-- Time to add scroll to top button -->
   <button onclick="topFunction()" id="myBtn" title="Go to top"><img id="final-image" src="./images/top.svg" alt="back to top button"></button>
 
-  <script src="./main.js">
 
-  </script>
+  <script src="./main.js"></script>
 </body>
 
 </html>
