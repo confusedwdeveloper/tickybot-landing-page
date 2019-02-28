@@ -269,3 +269,19 @@ footer p:first-child span {
 #footer p a {
   color: hsla(0,0%,100%,.75);
 }
+/* css for back to top button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #ffd05a;
+  border-radius: 4px;
+  padding: 1rem;
+}
+#final-image {
+  width: 2rem;
+}
