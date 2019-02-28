@@ -250,3 +250,22 @@ code {
   color: hsla(0,0%,100%,.9);
 }
 /* ............Footer............ */
+footer p:first-child span {
+  margin-right: 0.25rem;
+}
+#footer {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  background-color: #40596b;
+  text-align: center;
+}
+#footer p {
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 0.25rem;
+  color: hsla(0,0%,100%,.75);
+  font-size: 0.825rem;
+}
+#footer p a {
+  color: hsla(0,0%,100%,.75);
+}
