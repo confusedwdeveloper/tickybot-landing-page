@@ -68,6 +68,7 @@ img {
   background-color: #55c0ec;
 
 
+
 }
 .bot-description {
   grid-area: left;
@@ -78,11 +79,13 @@ img {
   margin: 1rem;
   justify-self: end;
   align-self: start;
+  /* max-width: 600px; */
 
 }
 .bot-robot {
   grid-area: right;
   margin: 1rem;
+  /* max-width: 500px; */
 
 }
 .heading {
@@ -194,6 +197,7 @@ img {
   width: 100%;
   padding: 0 1rem;
   max-width: 1200px;
+  /* flex-wrap: wrap; */
 
 }
 .how-it-image {
@@ -210,6 +214,7 @@ img {
   margin-bottom: 3rem;
   min-width: 300px;
   flex: 1 0 calc(33.33333% -2rem);
+
 
 
 }
@@ -285,5 +290,32 @@ footer p:first-child span {
   padding: 1rem;
 }
 #final-image {
-  width: 2rem;
+  /* width: 2rem; */
+}
+/* ................. time to work on media queries................. */
+@media (max-width: 1110px) {
+.how-it-container {
+  flex-wrap: wrap;
+}
+.cards {
+  max-width: 400px;
+}
+
+}
+@media (max-width: 895px) {
+.cards {
+  max-width: 80vw;
+  height: auto;
+}
+.subheading:after {
+  left: 39%;
+}
+}
+@media (max-width: 750px) {
+  .subheading:after {
+    left: 37%;
+  }
+}
+@media (max-width: 675px) {
+
 }
